@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>放量盘整股汇总</title>
+    <style>
+        /* 表格整体样式 */
+        .stock-data-table {
+            font-family: 楷体, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        /* 表头与单元格通用样式 */
+        .stock-data-table th, 
+        .stock-data-table td {
+            font-family: 楷体, sans-serif;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        /* 表头单独样式 */
+        .stock-data-table th {
+            font-family: 楷体, sans-serif;
+            background-color: #f5f5f5;
+            font-weight: bold;
+        }
+        /* 偶数行背景色（斑马纹） */
+        .stock-data-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        /* hover行高亮 */
+        .stock-data-table tr:hover {
+            background-color: #e9e9e9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-family: 楷体, sans-serif;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .nav-bar a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+        .info {
+            color: #666;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <a href="首页_delta_top.html">返回首页</a>
+            <a href="market_speculation.html">上一页：投机情绪</a>
+            <a href=>下一页：无</a>
+        </div>
+
+        <h1>放量盘整股汇总(近五日)</h1>
+
+        <!-- 关键修复：添加表格内容 -->
+        <table border="1" class="dataframe stock-data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>证券代码</th>
+      <th>证券名称</th>
+      <th>放量日期</th>
+      <th>所属申万二级行业</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>601138.SH</td>
+      <td>工业富联</td>
+      <td>2025-09-12</td>
+      <td>消费电子</td>
+      <td>整体上涨过多</td>
+    </tr>
+    <tr>
+      <td>002384.SZ</td>
+      <td>东山精密</td>
+      <td>2025-09-12</td>
+      <td>元件</td>
+      <td>整体上涨过多</td>
+    </tr>
+    <tr>
+      <td>600884.SH</td>
+      <td>杉杉股份</td>
+      <td>2025-09-12</td>
+      <td>电池</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>002716.SZ</td>
+      <td>湖南白银</td>
+      <td>2025-09-12</td>
+      <td>贵金属</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>002654.SZ</td>
+      <td>万润科技</td>
+      <td>2025-09-12</td>
+      <td>光学光电子</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>001309.SZ</td>
+      <td>德明利</td>
+      <td>2025-09-12</td>
+      <td>半导体</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>000932.SZ</td>
+      <td>华菱钢铁</td>
+      <td>2025-09-12</td>
+      <td>普钢</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>603283.SH</td>
+      <td>赛腾股份</td>
+      <td>2025-09-12</td>
+      <td>自动化设备</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>300237.SZ</td>
+      <td>美晨科技</td>
+      <td>2025-09-12</td>
+      <td>汽车零部件</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>600846.SH</td>
+      <td>同济科技</td>
+      <td>2025-09-12</td>
+      <td>工程咨询服务Ⅱ</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>000155.SZ</td>
+      <td>川能动力</td>
+      <td>2025-09-12</td>
+      <td>电力</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>300197.SZ</td>
+      <td>节能铁汉</td>
+      <td>2025-09-12</td>
+      <td>基础建设</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>600063.SH</td>
+      <td>皖维高新</td>
+      <td>2025-09-12</td>
+      <td>化学纤维</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>688656.SH</td>
+      <td>浩欧博</td>
+      <td>2025-09-12</td>
+      <td>医疗器械</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>000766.SZ</td>
+      <td>通化金马</td>
+      <td>2025-09-11</td>
+      <td>化学制药</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>001332.SZ</td>
+      <td>锡装股份</td>
+      <td>2025-09-11</td>
+      <td>专用设备</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>002100.SZ</td>
+      <td>天康生物</td>
+      <td>2025-09-11</td>
+      <td>饲料</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>300083.SZ</td>
+      <td>创世纪</td>
+      <td>2025-09-11</td>
+      <td>自动化设备</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>300498.SZ</td>
+      <td>温氏股份</td>
+      <td>2025-09-11</td>
+      <td>养殖业</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>300658.SZ</td>
+      <td>延江股份</td>
+      <td>2025-09-11</td>
+      <td>个护用品</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>300701.SZ</td>
+      <td>森霸传感</td>
+      <td>2025-09-11</td>
+      <td>光学光电子</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>300761.SZ</td>
+      <td>立华股份</td>
+      <td>2025-09-11</td>
+      <td>养殖业</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>300852.SZ</td>
+      <td>四会富仕</td>
+      <td>2025-09-11</td>
+      <td>元件</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>301200.SZ</td>
+      <td>大族数控</td>
+      <td>2025-09-11</td>
+      <td>专用设备</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>603239.SH</td>
+      <td>浙江仙通</td>
+      <td>2025-09-11</td>
+      <td>汽车零部件</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>603978.SH</td>
+      <td>深圳新星</td>
+      <td>2025-09-11</td>
+      <td>金属新材料</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>000558.SZ</td>
+      <td>天府文旅</td>
+      <td>2025-09-10</td>
+      <td>旅游及景区</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>000980.SZ</td>
+      <td>众泰汽车</td>
+      <td>2025-09-10</td>
+      <td>汽车零部件</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>002264.SZ</td>
+      <td>新华都</td>
+      <td>2025-09-10</td>
+      <td>广告营销</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>002558.SZ</td>
+      <td>巨人网络</td>
+      <td>2025-09-10</td>
+      <td>游戏Ⅱ</td>
+      <td>整体上涨过多</td>
+    </tr>
+    <tr>
+      <td>002602.SZ</td>
+      <td>ST华通</td>
+      <td>2025-09-10</td>
+      <td>游戏Ⅱ</td>
+      <td>整体上涨过多</td>
+    </tr>
+    <tr>
+      <td>002796.SZ</td>
+      <td>世嘉科技</td>
+      <td>2025-09-10</td>
+      <td>通信设备</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>300409.SZ</td>
+      <td>道氏技术</td>
+      <td>2025-09-10</td>
+      <td>电池</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>300428.SZ</td>
+      <td>立中集团</td>
+      <td>2025-09-10</td>
+      <td>汽车零部件</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>300476.SZ</td>
+      <td>胜宏科技</td>
+      <td>2025-09-10</td>
+      <td>元件</td>
+      <td>整体上涨过多</td>
+    </tr>
+    <tr>
+      <td>300618.SZ</td>
+      <td>寒锐钴业</td>
+      <td>2025-09-10</td>
+      <td>能源金属</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>600173.SH</td>
+      <td>卧龙新能</td>
+      <td>2025-09-10</td>
+      <td>房地产开发</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>600601.SH</td>
+      <td>方正科技</td>
+      <td>2025-09-10</td>
+      <td>元件</td>
+      <td>整体上涨过多</td>
+    </tr>
+    <tr>
+      <td>600653.SH</td>
+      <td>申华控股</td>
+      <td>2025-09-10</td>
+      <td>汽车服务</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>603101.SH</td>
+      <td>汇嘉时代</td>
+      <td>2025-09-10</td>
+      <td>一般零售</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>603119.SH</td>
+      <td>浙江荣泰</td>
+      <td>2025-09-10</td>
+      <td>汽车零部件</td>
+      <td>整体上涨过多</td>
+    </tr>
+    <tr>
+      <td>603127.SH</td>
+      <td>昭衍新药</td>
+      <td>2025-09-10</td>
+      <td>医疗服务</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>603255.SH</td>
+      <td>鼎际得</td>
+      <td>2025-09-10</td>
+      <td>化学制品</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>603863.SH</td>
+      <td>松炀资源</td>
+      <td>2025-09-10</td>
+      <td>造纸</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>688202.SH</td>
+      <td>美迪西</td>
+      <td>2025-09-10</td>
+      <td>医疗服务</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>688388.SH</td>
+      <td>嘉元科技</td>
+      <td>2025-09-10</td>
+      <td>电池</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</body>
+</html>
